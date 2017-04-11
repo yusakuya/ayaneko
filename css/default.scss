@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10){
+    font-size: $size + px;
+    font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$basecolor : #dbc9e3;
+$fontcolor : #633b6f;
+$linecolor : #626262;
+
+/*----------------------------------------------------------------------------*/
+
+body {
+    background-color: $basecolor;
+    color: $fontcolor;
+    h1 {
+        @include fontsize(23);
+    }
+    h2 {
+        @include fontsize(18);
+    }
+    p {
+        @include fontsize(13);
+    }
+    @media (min-width: 550px) {
+        h1 {
+            @include fontsize(25);
+        }
+        h2 {
+            @include fontsize(20);
+        }
+        p {
+            @include fontsize(15);
+        }
+    }
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    #tab {
+        margin: 0;
+        padding: 0;
+        a {
+            margin: 0;
+            padding: 0;
+        }
+        .tab_top {
+            width: 40%;
+            margin-left: 20px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .tab_novel {
+            width: 40%;
+            margin-left: 20px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        @media (min-width: 550px){
+            float: right;
+            .tab_top {
+                width: 200px;
+                margin-right: 0;
+                margin-left: 20px;
+            }
+            .tab_novel {
+                width: 200px;
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cover_img {
+    clear: both;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+#main_letter {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bar.png");
+    background-repeat: repeat-y;
+    @media (max-width: 550px){
+        background-size: 30px auto;
+    }
+}
+
+.letter_1 {
+    clear: both;
+    width: 100%;
+    height: 600px;
+    border-bottom: 2px solid $linecolor;
+    @media (min-width: 550px){
+        height: 320px;
+    }
+}
+
+#profile {
+    margin-left: 40px;
+    padding: 5px;
+    @media (min-width: 550px){
+        float: left;
+        width: 40%;
+        margin-left: 80px;
+        padding: 15px;
+    }
+}
+
+#past {
+    .iframe {
+        width: 80%;
+        height: 250px;
+        border: 1px solid black;
+        padding: 15px;
+        margin-left: 35px;
+        margin-right: 10px;
+        @media (min-width: 550px){
+            width: 100%;
+            height: 270px;
+            margin-left: 0;
+        }
+    }
+    @media (min-width: 550px){
+        float: right;
+        width: 35%;
+        margin-right: 35px;
+    }
+}
+
+.letter_2 {
+    clear: both;
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px solid $linecolor;
+    @media (min-width: 550px){
+        height: 320px;
+    }
+}
+
+#biography {
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 5px;
+    .iframe_bio {
+        width: 100%;
+        height: 200px;
+        border: none;
+    }
+    @media (min-width: 550px){
+        margin-top: 0;
+        margin-left: 80px;
+        padding: 15px;
+    }
+}
+
+.letter_3 {
+    clear: both;
+    width: 100%;
+    height: 500px;
+    border-bottom: 2px solid $linecolor;
+    @media (min-width: 550px){
+        height: 400px;
+    }
+}
+
+#mail {
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 5px;
+    p {
+        margin-top: 20px;
+    }
+    .mail_button {
+        @include fontsize(40);
+        line-height: 0;
+        width: 20px;
+        height: 20px;
+    }
+    @media (min-width: 550px){
+        float: left;
+        width: 40%;
+        margin-top: 0;
+        margin-left: 80px;
+        padding: 15px;
+    }
+}
+
+#twitter {
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 5px;
+    @media (min-width: 550px){
+        float: right;
+        width: 35%;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+.letter_4 {
+    clear: both;
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px solid $linecolor;
+    @media (min-width: 550px){
+        height: 400px;
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+        @include fontsize(10);
+    }
+}
+
+#novel {
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 5px;
+    @media (min-width: 550px){
+        margin-top: 0;
+        margin-left: 80px;
+        padding: 15px;
+    }
+}
+
+.letter_5 {
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $linecolor;
+}
+
+.sample_1 {
+    -webkit-user-select: none; -khtml-user-select: none; -ms-user-select: none; -moz-user-select: none; user-select: none;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 5px;
+    @media (min-width: 550px){
+        margin-top: 0;
+        margin-left: 80px;
+        padding: 15px;
+    }
+}
+
+.back_button {
+    @include fontsize(25);
+    line-height: 0;
+    text-decoration: none;
+    color: $fontcolor;
+    float: right;
+}
+

@@ -1,0 +1,235 @@
+html {
+  font-size: 62.5%; }
+
+/*----------------------------------------------------------------------------*/
+body {
+  background-color: #dbc9e3;
+  color: #633b6f; }
+  body h1 {
+    font-size: 23px;
+    font-size: 2.3rem; }
+  body h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+  body p {
+    font-size: 13px;
+    font-size: 1.3rem; }
+  @media (min-width: 550px) {
+    body h1 {
+      font-size: 25px;
+      font-size: 2.5rem; }
+    body h2 {
+      font-size: 20px;
+      font-size: 2rem; }
+    body p {
+      font-size: 15px;
+      font-size: 1.5rem; } }
+
+header {
+  margin: 0;
+  padding: 0;
+  line-height: 0; }
+  header #tab {
+    margin: 0;
+    padding: 0; }
+    header #tab a {
+      margin: 0;
+      padding: 0; }
+    header #tab .tab_top {
+      width: 40%;
+      margin-left: 20px;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    header #tab .tab_novel {
+      width: 40%;
+      margin-left: 20px;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    @media (min-width: 550px) {
+      header #tab {
+        float: right; }
+        header #tab .tab_top {
+          width: 200px;
+          margin-right: 0;
+          margin-left: 20px; }
+        header #tab .tab_novel {
+          width: 200px;
+          margin-right: 0;
+          margin-left: 20px; } }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.cover_img {
+  clear: both;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0; }
+
+#main_letter {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bar.png");
+  background-repeat: repeat-y; }
+  @media (max-width: 550px) {
+    #main_letter {
+      background-size: 30px auto; } }
+
+.letter_1 {
+  clear: both;
+  width: 100%;
+  height: 600px;
+  border-bottom: 2px solid #626262; }
+  @media (min-width: 550px) {
+    .letter_1 {
+      height: 320px; } }
+
+#profile {
+  margin-left: 40px;
+  padding: 5px; }
+  @media (min-width: 550px) {
+    #profile {
+      float: left;
+      width: 40%;
+      margin-left: 80px;
+      padding: 15px; } }
+
+#past .iframe {
+  width: 80%;
+  height: 250px;
+  border: 1px solid black;
+  padding: 15px;
+  margin-left: 35px;
+  margin-right: 10px; }
+  @media (min-width: 550px) {
+    #past .iframe {
+      width: 100%;
+      height: 270px;
+      margin-left: 0; } }
+@media (min-width: 550px) {
+  #past {
+    float: right;
+    width: 35%;
+    margin-right: 35px; } }
+
+.letter_2 {
+  clear: both;
+  width: 100%;
+  height: 300px;
+  border-bottom: 2px solid #626262; }
+  @media (min-width: 550px) {
+    .letter_2 {
+      height: 320px; } }
+
+#biography {
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 5px; }
+  #biography .iframe_bio {
+    width: 100%;
+    height: 200px;
+    border: none; }
+  @media (min-width: 550px) {
+    #biography {
+      margin-top: 0;
+      margin-left: 80px;
+      padding: 15px; } }
+
+.letter_3 {
+  clear: both;
+  width: 100%;
+  height: 500px;
+  border-bottom: 2px solid #626262; }
+  @media (min-width: 550px) {
+    .letter_3 {
+      height: 400px; } }
+
+#mail {
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 5px; }
+  #mail p {
+    margin-top: 20px; }
+  #mail .mail_button {
+    font-size: 40px;
+    font-size: 4rem;
+    line-height: 0;
+    width: 20px;
+    height: 20px; }
+  @media (min-width: 550px) {
+    #mail {
+      float: left;
+      width: 40%;
+      margin-top: 0;
+      margin-left: 80px;
+      padding: 15px; } }
+
+#twitter {
+  margin-top: 20px;
+  margin-left: 40px;
+  padding: 5px; }
+  @media (min-width: 550px) {
+    #twitter {
+      float: right;
+      width: 35%;
+      margin-top: 0;
+      margin-left: 0;
+      padding: 15px; } }
+
+.letter_4 {
+  clear: both;
+  width: 100%;
+  height: 300px;
+  border-bottom: 2px solid #626262; }
+  @media (min-width: 550px) {
+    .letter_4 {
+      height: 400px; } }
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+  font-size: 1rem; }
+
+#novel {
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 5px; }
+  @media (min-width: 550px) {
+    #novel {
+      margin-top: 0;
+      margin-left: 80px;
+      padding: 15px; } }
+
+.letter_5 {
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #626262; }
+
+.sample_1 {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 5px; }
+  @media (min-width: 550px) {
+    .sample_1 {
+      margin-top: 0;
+      margin-left: 80px;
+      padding: 15px; } }
+
+.back_button {
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 0;
+  text-decoration: none;
+  color: #633b6f;
+  float: right; }
+
+/*# sourceMappingURL=default.css.map */
